@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/github.io/rt-handwerk/static/css/main.ebe9b802.css",
-    "main.js": "/github.io/rt-handwerk/static/js/main.e88be9f3.js",
-    "index.html": "/github.io/rt-handwerk/index.html",
-    "main.ebe9b802.css.map": "/github.io/rt-handwerk/static/css/main.ebe9b802.css.map",
-    "main.e88be9f3.js.map": "/github.io/rt-handwerk/static/js/main.e88be9f3.js.map"
+    "main.css": "/rt-handwerk/static/css/main.ebe9b802.css",
+    "main.js": "/rt-handwerk/static/js/main.e88be9f3.js",
+    "index.html": "/rt-handwerk/index.html",
+    "main.ebe9b802.css.map": "/rt-handwerk/static/css/main.ebe9b802.css.map",
+    "main.e88be9f3.js.map": "/rt-handwerk/static/js/main.e88be9f3.js.map"
   },
   "entrypoints": [
     "static/css/main.ebe9b802.css",
