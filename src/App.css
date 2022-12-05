@@ -1,38 +1,233 @@
-.App {
-  text-align: center;
+*{
+    padding:0;
+    margin: 0;
+    border: 0;
+}
+*,*:before, *:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing:border-box;
+}
+:focus,:active{outline: none;}
+a:focus, a:active{outline:none;}
+
+nav,footer,header,aside{display:block;}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-size :100%;
+    line-height:1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    webkit-text-size-adjust: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input, utton, textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*-----------
+#A3A3DD
+#7576CC
+#4648BA
+#191BA9
+---------*/
+body{
+height: 100%;
+font-family: Arial, "Helvetica Neue", Helvetica,sans-serif;
+}
+.wrapper{
+
+}
+.header{
+   position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    background-color: #fff;
+}
+.container{
+max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.header__body{
+position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items:center;
+}
+.header__logo{
+flex: 0 0 210px;
+}
+.header__logo img{
+    max-width: 100%;
+}
+header__burger{
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header__menu{
+    list-style-type: none;
+    padding-right: 250px;
+}
+.header__list{
+    display: flex;
+}
+.header__list li{
+list-style: none;
+    margin: 0 0 0 20px;
+}
+.header__link{
+color:#191BA9;
+font-size: 18px;
+}
+.content__container{
+    padding:100px 0 0 0;
+    max-width: 1180px;
+    margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+.content__text{
 
-.App-link {
-  color: #61dafb;
 }
+.footer__container{
+    background-image: linear-gradient(#4648BA,#191BA9);
+    max-width: 1180px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    padding: 20px 0;
+}
+.footer-content{
+    width: 25%;
+    padding: 0 40px;
+}
+.footer-content h4{
+    font-size: 18px;
+    color: #ffffff;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-content h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #fff;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-content ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-content ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-content ul li a:hover{
+    color: #ffffff;
+    padding-left: 10px;
+}
+.footer-content .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+.footer-contentum ul li{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-contentum ul li:hover{
+    color: #ffffff;
+
+}
+.footer-contentum ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-contentum ul li a:hover{
+    color: #ffffff;
+
+}
+.footer-contentum h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-contentum h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #fff;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+/*responsive*/
+@media(max-width: 767px){
+    .footer-content{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 574px){
+    .footer-content{
+        width: 100%;
+    }
 }
